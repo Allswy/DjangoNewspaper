@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'accounts',
+    'newspaper',
 ]
 
 MIDDLEWARE = [
@@ -112,6 +113,8 @@ USE_I18N = True
 USE_TZ = True
 
 AUTH_USER_MODEL = 'accounts.CustomUser'
+LOGIN_REDIRECT_URL = 'newspaper:home'
+LOGOUT_REDIRECT_URL = 'newspaper:home'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
