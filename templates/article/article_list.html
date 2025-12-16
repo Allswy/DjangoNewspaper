@@ -21,6 +21,7 @@
         <a href="{% url 'articles:article_edit' article.pk %}">Edit</a>
         <a href="{% url 'articles:article_delete' article.pk %}">Delete</a>
       {% endif %}
+  <a href="{{ article.get_absolute_url }}">New Comment</a>
   </div>
 </div>
 <br />
